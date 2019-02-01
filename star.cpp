@@ -76,7 +76,10 @@ Planet::Planet(GLfloat radius, GLfloat distance,
                GLfloat speed,  GLfloat selfSpeed,
                Star* parentStar, GLfloat rgbColor[3]) :
 Star(radius, distance, speed, selfSpeed, parentStar) {
-    // TODO:
+    rgbaColor[0] = rgbColor[0];
+    rgbaColor[1] = rgbColor[1];
+    rgbaColor[2] = rgbColor[2];
+    rgbaColor[3] = 1.0f;
 }
 
 void Planet::drawPlanet() {
